@@ -1,0 +1,86 @@
+// ---------- Article container ---------
+.bottle {
+    width: 180px;
+    top: -70px;
+    left: -35px;
+    position: absolute;
+    z-index: -1;
+}
+#article{
+    display: flex;
+    flex-flow: row wrap;
+}
+.advantages{
+    display: flex;
+    flex-direction: row;
+    p {
+        margin: 0px;
+    }
+}
+.star{
+    width: 50px;
+    img {
+        width: 30px;
+    }
+}
+.advName{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #4d4545;
+    font-family: RobotoBold;
+}
+.advDescription{
+    font-size: 11px;
+    color: #a7a9ac;
+}
+.advPlus {
+    font-size: 25px;
+    color: #c49a6c;
+}
+.oferAbout{
+    font-size: 35px;
+    font-family: RobotoBold;
+    color: #25383f;
+    text-transform: uppercase;
+}
+
+.questionAbout{
+    font-size: 14px;
+    font-family: RobotoLight;
+    margin-top: 10px;
+}
+.btnMore{
+    border-radius: 0px;
+    font-size: 23px;
+    font-family: Helvetica, sans-serif;
+    font-family: RobotoBold;
+    text-transform: uppercase;
+    color: black;
+    border-color: black;
+    border-width: 5px;
+    padding: 10px 25px;
+    margin-left: 5px;
+
+}
+h2{
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: RobotoBold;
+    text-align: right;
+    color: #ffffff;
+    margin-bottom: -18px;
+}
+.header2{
+    :first-child{
+        margin-right: 100px;
+    }
+
+    :nth-child(2){
+        margin-right: 10px;
+    }
+    :nth-child(3){
+        margin-right: 70px;
+        margin-bottom: 20px;
+    }
+}
+// ---------- Article container ----------

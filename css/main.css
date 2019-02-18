@@ -1,0 +1,365 @@
+@charset "UTF-8";
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-end; }
+  .navTop ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0px; }
+    .navTop ul a {
+      transition: all 0.5s linear 0s;
+      color: #ffffff;
+      font-size: 11px;
+      font-family: RobotoLight;
+      margin: 0px 10px; }
+      .navTop ul a:hover {
+        text-shadow: 2px 2px 2px gray;
+        color: #ffffff;
+        text-decoration: none; }
+      .navTop ul a:visited {
+        color: #ffffff; }
+    .navTop ul .navLang {
+      border: 1px solid #ffffff;
+      font-size: 14px;
+      transition: all 0.5s linear 0s; }
+      .navTop ul .navLang a {
+        transition: all 0.5s linear 0s; }
+        .navTop ul .navLang a:hover {
+          text-shadow: none;
+          color: gray;
+          text-decoration: none; }
+      .navTop ul .navLang:hover {
+        color: gray;
+        text-decoration: none;
+        background-color: #ffffff; }
+        .navTop ul .navLang:hover a {
+          color: gray;
+          text-shadow: none; }
+        .navTop ul .navLang:hover .dropdown-item {
+          text-shadow: none; }
+      .navTop ul .navLang:visited {
+        color: #ffffff; }
+      .navTop ul .navLang .dropdown-item {
+        color: gray;
+        margin: 0px; }
+  .navTop .logo a {
+    transition: all 0.5s linear 0s;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: RobotoBold; }
+    .navTop .logo a:hover {
+      text-shadow: 2px 2px 2px gray;
+      color: #ffffff;
+      text-decoration: none; }
+    .navTop .logo a:visited {
+      color: #ffffff; }
+
+.navMain {
+  align-self: flex-start;
+  background-color: #f9f9f9;
+  box-shadow: 0px 1px 2px rgba(128, 128, 128, 0.5);
+  border: 2px solid #f1f2f2;
+  padding: 0px;
+  text-align: center; }
+  .navMain ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: RobotoBold; }
+    .navMain ul li {
+      flex: auto;
+      padding: 12px 0px;
+      transition: all 0.1s linear 0s; }
+      .navMain ul li a {
+        color: #6d6e71;
+        margin: 0px 5px;
+        text-decoration: none; }
+      .navMain ul li:hover {
+        background-color: #ffedc3; }
+        .navMain ul li:hover a {
+          color: #6d6e71;
+          margin: 0px 5px;
+          text-decoration: none; }
+      .navMain ul li .navArrow {
+        height: 6px;
+        margin-bottom: 2px; }
+    .navMain ul .basket {
+      transition: all 0.1s linear 0s;
+      background: linear-gradient(to top, #745d1e, #52a728); }
+      .navMain ul .basket a {
+        color: #ffffff;
+        margin: 0px 5px;
+        text-decoration: none; }
+      .navMain ul .basket:hover {
+        background: linear-gradient(to top, #52a728, #52a728); }
+        .navMain ul .basket:hover a {
+          color: #ffffff;
+          margin: 0px 5px;
+          text-decoration: none; }
+      .navMain ul .basket #basketIcon {
+        border: 1px solid rgba(255, 255, 255, 0.404);
+        border-collapse: separate;
+        border-radius: 50px;
+        width: 23px;
+        height: 23px;
+        padding: 3px; }
+
+.bottle {
+  width: 180px;
+  top: -70px;
+  left: -35px;
+  position: absolute;
+  z-index: -1; }
+
+#article {
+  display: flex;
+  flex-flow: row wrap; }
+
+.advantages {
+  display: flex;
+  flex-direction: row; }
+  .advantages p {
+    margin: 0px; }
+
+.star {
+  width: 50px; }
+  .star img {
+    width: 30px; }
+
+.advName {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #4d4545;
+  font-family: RobotoBold; }
+
+.advDescription {
+  font-size: 11px;
+  color: #a7a9ac; }
+
+.advPlus {
+  font-size: 25px;
+  color: #c49a6c; }
+
+.oferAbout {
+  font-size: 35px;
+  font-family: RobotoBold;
+  color: #25383f;
+  text-transform: uppercase; }
+
+.questionAbout {
+  font-size: 14px;
+  font-family: RobotoLight;
+  margin-top: 10px; }
+
+.btnMore {
+  border-radius: 0px;
+  font-size: 23px;
+  font-family: Helvetica, sans-serif;
+  font-family: RobotoBold;
+  text-transform: uppercase;
+  color: black;
+  border-color: black;
+  border-width: 5px;
+  padding: 10px 25px;
+  margin-left: 5px; }
+
+h2 {
+  font-size: 54px;
+  text-transform: uppercase;
+  font-family: RobotoBold;
+  text-align: right;
+  color: #ffffff;
+  margin-bottom: -18px; }
+
+.header2 :first-child {
+  margin-right: 100px; }
+
+.header2 :nth-child(2) {
+  margin-right: 10px; }
+
+.header2 :nth-child(3) {
+  margin-right: 70px;
+  margin-bottom: 20px; }
+
+.calcBorder {
+  background-color: #e9e5e4;
+  padding: 10px; }
+
+.calc {
+  background-image: url("../img/bg-form.jpg");
+  border: 2px dashed #a7a9ac;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .calc p {
+    margin: 0px 10px; }
+  .calc h3 {
+    color: #25383f;
+    text-align: center;
+    font-size: 36pх;
+    font-family: RobotoBold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 0px 30px; }
+  .calc h5 {
+    color: #25383f;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center; }
+  .calc label {
+    margin-top: 10px;
+    color: #25383f;
+    font-size: 14px; }
+  .calc .lineForm {
+    border: 1px solid #d1d3d4;
+    margin: 10px; }
+  .calc input, .calc select {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #d1d3d4;
+    padding-left: 5px;
+    color: #a7a9ac; }
+    .calc input ::placeholder, .calc select ::placeholder {
+      color: #a7a9ac; }
+  .calc .underLine {
+    color: #d26441;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center; }
+  .calc #result {
+    color: #d26441;
+    font-family: RobotoBold;
+    font-size: 42px;
+    text-align: center; }
+  .calc .grn {
+    color: #25383f;
+    text-align: center;
+    font-size: 14px;
+    font-family: RobotoLight;
+    margin-bottom: 20px; }
+
+.calcProfit {
+  position: relative; }
+
+.invalid-tooltip {
+  left: 20px;
+  background-color: tomato; }
+
+body {
+  background-color: #f1f2f2;
+  font-family: RobotoReg; }
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  position: relative; }
+
+.backgroundHeader, .backgroundHeader:after {
+  position: absolute;
+  align-self: flex-start;
+  height: 410px;
+  width: 100%;
+  background-position: top center;
+  background-size: auto 450px;
+  z-index: -10;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  list-style: none; }
+
+.backgroundHeader:after {
+  content: '';
+  background: transparent url(../img/pattern.png) repeat top left; }
+
+.backgroundHeader li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 36s linear infinite 0s; }
+
+.backgroundHeader li:nth-child(1) span {
+  background-image: url("../img/background-top-1.jpg"); }
+
+.backgroundHeader li:nth-child(2) span {
+  background-image: url("../img/background-top-2.jpg");
+  animation-delay: 6s; }
+
+.backgroundHeader li:nth-child(3) span {
+  background-image: url("../img/background-top-3.jpg");
+  animation-delay: 12s; }
+
+.backgroundHeader li:nth-child(4) span {
+  background-image: url("../img/background-top-1.jpg");
+  animation-delay: 18s; }
+
+.backgroundHeader li:nth-child(5) span {
+  background-image: url("../img/background-top-2.jpg");
+  animation-delay: 24s; }
+
+.backgroundHeader li:nth-child(6) span {
+  background-image: url("../img/background-top-3.jpg");
+  animation-delay: 30s; }
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in; }
+  8% {
+    opacity: 1;
+    transform: scale(1.05);
+    animation-timing-function: ease-out; }
+  17% {
+    opacity: 1;
+    transform: scale(1.1); }
+  22% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) translateY(-20%); }
+  25% {
+    opacity: 0;
+    -transform: scale(1.1) translateY(-100%); }
+  100% {
+    opacity: 0; } }
+
+/* Show at least something when animations not supported */
+.no-cssanimations .backgroundHeader li span {
+  opacity: 1; }
+
+.formCalc {
+  position: relative; }
+
+.bacgroundForm {
+  position: absolute;
+  top: 160px;
+  height: 500px;
+  background-image: url("../img/background-form.jpg");
+  background-position: top center;
+  background-size: auto 500px;
+  z-index: -10; }
+
+@font-face {
+  font-family: RobotoReg;
+  src: url("fonts/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("fonts/RobotoCondensed-Bold.ttf"); }
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("fonts/RobotoCondensed-Light.ttf"); }

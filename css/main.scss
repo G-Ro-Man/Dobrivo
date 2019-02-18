@@ -1,0 +1,128 @@
+@import 'nav';
+@import 'article';
+@import 'form';
+
+body{
+    background-color: #f1f2f2;
+    font-family: RobotoReg;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    position: relative;
+   
+}
+// ========== Slider ==========
+.backgroundHeader, .backgroundHeader:after {
+    position: absolute;
+    align-self: flex-start;
+    height: 410px;
+    width: 100%;
+    background-position: top center;
+    background-size: auto 450px;
+    z-index: -10;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    list-style: none;
+}
+.backgroundHeader:after {
+    content: '';
+    background: transparent url(../img/pattern.png) repeat top left;
+}
+.backgroundHeader li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.backgroundHeader li:nth-child(1) span { background-image: url("../img/background-top-1.jpg") }
+.backgroundHeader li:nth-child(2) span {
+    background-image: url("../img/background-top-2.jpg");
+    animation-delay: 6s;
+}
+.backgroundHeader li:nth-child(3) span {
+    background-image: url("../img/background-top-3.jpg");
+    animation-delay: 12s;
+}
+.backgroundHeader li:nth-child(4) span {
+    background-image: url("../img/background-top-1.jpg");
+    animation-delay: 18s;
+}
+.backgroundHeader li:nth-child(5) span {
+    background-image: url("../img/background-top-2.jpg");
+    animation-delay: 24s;
+}
+.backgroundHeader li:nth-child(6) span {
+    background-image: url("../img/background-top-3.jpg");
+    animation-delay: 30s;
+}
+
+@keyframes imageAnimation { 
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    22% {
+      opacity: 0;
+      -webkit-transform: scale(1.1) translateY(-20%);
+    }
+    25% {
+        opacity: 0;
+        -transform: scale(1.1) translateY(-100%);
+    }
+    100% { opacity: 0 }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations .backgroundHeader li span{
+    opacity: 1;
+}// ========== End Slider ==========
+
+.formCalc{
+    position: relative;
+}
+
+.bacgroundForm{
+    position: absolute;
+    top: 160px;
+    height: 500px;
+    background-image: url('../img/background-form.jpg');
+    background-position: top center;
+    background-size: auto 500px;
+    z-index: -10;  
+}
+
+@font-face {
+    font-family: RobotoReg;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url('fonts/RobotoCondensed-Bold.ttf');
+}
+@font-face {
+    font-family: RobotoLight;
+    src: url('fonts/RobotoCondensed-Light.ttf');
+}
